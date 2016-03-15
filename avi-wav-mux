@@ -1,0 +1,6 @@
+#!/bin/sh
+for i in output1.avi output2.avi output3.avi
+do
+ffmpeg -i $i -i output.wav -vcodec copy -acodec copy $i-s.avi
+done
+

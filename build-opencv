@@ -1,0 +1,4 @@
+#!/bin/sh
+g++ -c -std=c++11  src/*.cpp
+g++ *.o -o phantomOP -std=c++11 `pkg-config --cflags opencv` `pkg-config --libs opencv`
+rm *.o
